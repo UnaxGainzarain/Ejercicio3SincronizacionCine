@@ -9,7 +9,7 @@ public class SimulacionCine {
     static final int MAX_PERSONAS_COLA = 10;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Cine cine = new Cine(AFORO_TOTAL);
+		Cine cine = new Cine(AFORO_TOTAL, 0, 0);
         System.out.println("Cine inaugurado con aforo: " + AFORO_TOTAL);
 
 	}
