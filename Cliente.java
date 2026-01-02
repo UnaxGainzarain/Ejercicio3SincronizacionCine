@@ -1,9 +1,23 @@
 package ejercicio3Sincronizacion;
 
 public class Cliente extends Thread {
-	private int id;
-    public Cliente(int id) { this.id = id; }
-    public void run() {
-        System.out.println("Cliente " + id + " intenta comprar entrada.");
+    private int id;
+    private Cine cine;
+
+    public Cliente(int id, Cine cine) {
+        this.id = id;
+        this.cine = cine;
     }
+
+    @Override
+    public void run() {
+        
+        cine.ponerseEnCola(this);
+    }
+
+   
+    public int getEspectadorId() {
+        return id;
+    }
+   
 }
