@@ -1,4 +1,5 @@
 package ejercicio3Sincronizacion;
+import java.util.concurrent.Semaphore;
 
 public class SimulacionCine {
 	// Configuración V2
